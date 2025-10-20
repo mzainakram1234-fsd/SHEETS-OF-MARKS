@@ -1,0 +1,97 @@
+span{
+    font-family: cursive;
+}
+h2{
+    border-bottom: 1px solid black;
+    width: 30%;
+    border-left: 1px solid black;
+    padding-left: 3px;
+}
+th{
+    padding: 10px;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+th:hover{
+    transform: rotateX(10deg) rotateY(15deg) rotateZ(20deg);
+}
+.td{
+    padding-left: 35px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.td1{
+    padding: 9px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    transform: scale(0.5);
+     transform-style: preserve-3d;
+     transition: transform 2s;
+}
+.td1:hover{
+     transform: scale(1);
+}
+.td:nth-child(odd){
+    color: white;
+    background-color: black;
+    transform: rotateY(0deg);
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+.td:nth-child(odd):hover{
+    transform: rotateY(360deg);
+}
+.td:nth-child(even){
+    color: black;
+    object-fit: cover;
+    font-size: 25px;
+    font-family: cursive;
+    animation: zain 10s ease infinite;
+    transform: translateX(0px);
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+.td:nth-child(even):hover{
+    transform: translateX(20px);
+}
+@keyframes zain{
+    0%{color: black;}
+    25%{color: rgb(121, 255, 4);}
+    50%{color: rgb(17, 0, 255);}
+    75%{color: rgb(255, 255, 0);}
+    100%{
+        -webkit-background-clip: text;
+        background-image: url(image.png);
+        background-clip: text;
+        color: transparent;
+    }
+    
+}
+h4{
+      animation-name: example;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     transform: scale(1);
+     transform-style: preserve-3d;
+     transition: transform 2s;
+}
+h4:hover{
+    transform: scale(1.1);
+}
+@keyframes example{
+    0%{color: black;}
+    25%{color: rgb(121, 255, 4);}
+    50%{color: rgb(17, 0, 255);}
+    75%{color: rgb(255, 255, 0);}
+    100%{
+        -webkit-background-clip: text;
+        background-image: url(image.png);
+        background-clip: text;
+        color: transparent;
+    }
+    
+}
+table{
+    margin-left: 20px;
+}
